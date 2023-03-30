@@ -13,14 +13,15 @@ const Imsak = () => {
 
     console.log(provinsi);
 
-const kabkota = async (id) => {
-    const query = await getKota(id);
-    console.log(query);
-}
+
 
     return (
     <>
-    <input type="text" placeholder="Provinsi" list="provinsi" onChange={(id) => kabkota(id.target.value)} />
+    <select>
+        {provinsi ? provinsi.map((prov) => {
+            return <option key={prov.data} value={prov.data}>{prov.data}</option>
+        }) : null}
+    </select>
     </>
     );
 }
