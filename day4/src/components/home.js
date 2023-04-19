@@ -1,10 +1,15 @@
-import NavigationBar from './navigation';
+import "../styles/style.css"
+import Head from './navigation';
+import Summary from "./summary";
 
 function Home() {
     return (
         <div>
-            <NavigationBar />
-            <h1>Home</h1>
+            <Head />
+            <div className='Homepage'>
+                <h1>Fernando Julian</h1>
+            </div>
+            <Summary />
         </div>
     )
 }
