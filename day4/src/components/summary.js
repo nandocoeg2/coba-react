@@ -6,6 +6,8 @@ import "../styles/style.css";
 import { AiOutlineFileSearch, AiOutlineCheckSquare} from "react-icons/ai";
 import { GiArrowFlights } from "react-icons/gi";
 
+
+
 function Summary() {
   return (
     <div className="about-me">
